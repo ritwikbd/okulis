@@ -14,7 +14,7 @@ def median(array):
     if length%2 == 1:
         return array[length//2] #Length being odd
     else:
-        median = (array[length//2 -1] + array[length//2])*0.5 #Length being odd
+        median = (array[length//2 -1] + array[length//2])*0.5 #Length being even
         return median
     
 def window(superset,k):
