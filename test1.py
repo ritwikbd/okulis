@@ -10,7 +10,7 @@ def median(array):
     length=len(array)
     array=sorted(array)
     if length == 0:
-        return 'NA'
+        return 0
     if length%2 == 1:
         return array[length//2] #Length being odd
     else:
