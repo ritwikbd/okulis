@@ -27,6 +27,12 @@ def window(superset,k):
         med=median(subset)
         start=start+1
         result.append(float(med)) #Typecasting to float for uniformity in case of odd and even values of k
-    print(result)
+    return result
     
-#window([1,3,-1,-3,5,3,6,7],3)
+if __name__ == "__main__":
+    print("Enter List Separated by comma")
+    ina=input().split(',')
+    ina=[int(x) for x in ina]
+    k=int(input("Enter size of Sliding Window\n"))
+    res=window(ina, k)
+    print("Output:\t{0}".format(res))
